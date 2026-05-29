@@ -1,1 +1,1 @@
-# Skin-Care-Landing-Page
+# Practicing CSS animations
