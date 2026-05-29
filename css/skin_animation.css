@@ -1,0 +1,233 @@
+body{
+    scroll-behavior: smooth;
+}
+section .image1 p{
+    animation: text-skin  ease-in-out ;
+    animation-range: entry 89vh exit 100vh;
+    animation-timeline: view();
+}
+@keyframes text-skin{
+    0% {
+        transform:translateY(0px);  
+        opacity: 1;
+        clip-path: inset(0 0% 0% 0%);
+    }
+    30%{
+        transform: translateY(-20vh);
+        clip-path: inset(0% 0% 1% 0%);
+        opacity: 0;
+    }
+    100%{ 
+        transform: translateY(-30vh);  
+        opacity: 0;
+        clip-path: inset(0 50% 50% 50%);
+    }
+}
+section .image1 img{
+    animation: lotion  both ;
+    animation-range: entry 100vh exit 140vh;
+    animation-timeline: view(50% 40%);
+    animation-delay: 0.3s;
+}
+
+    @keyframes lotion{
+    0% {
+        animation-delay: 0.3s;
+        transform:translateY(0px); 
+        opacity: 1;
+        clip-path: inset(0 0% 0% 0%);
+    }
+    30%{
+        transform: translateY(20vh); 
+        clip-path: inset(0 0% 20% 0%);
+        opacity: 0;
+    }
+    100%{ 
+        transform: translateY(30vh);  
+        opacity: 0;
+        clip-path: inset(0 50% 50% 50%);
+    }
+}
+section .image1 .subtext .exp-1{
+    animation: subtext1  ease-in-out ;
+    animation-range: entry 55vh exit 100vh;
+    animation-timeline: view();
+}
+@keyframes subtext1{
+    0% {
+        transform:translateX(0px);  
+        opacity: 1;
+        clip-path: inset(0 0% 0% 0%);
+    }
+    30%{
+        transition-delay: 5s all;
+        transform: translateX(20vh);
+        clip-path: inset(0 20% 0% 20%);
+        opacity: 0;
+    }
+    100%{ 
+        transform: translateX(30vh);  
+        opacity: 0;
+        clip-path: inset(0 50% 50% 50%);
+    }
+}
+section .image1 .subtext .exp-2{
+    animation: subtext2  ease-in-out ;
+    animation-range: entry 55vh exit 100vh;
+    animation-timeline: view();
+}
+@keyframes subtext2{
+    0% {
+        transform:translateX(0px);  
+        opacity: 1;
+        clip-path: inset(0 0% 0% 0%);
+    }
+    30%{
+        transition-delay: 5s all;
+        transform: translateX(-20vh);
+        clip-path: inset(0 20% 0% 20%);
+        opacity: 0;
+    }
+    100%{ 
+        transform: translateX(-30vh);  
+        opacity: 0;
+        clip-path: inset(0 50% 50% 50%);
+    }
+}
+/* =================================PAGE 2==================================== */
+section  .crafted-h1{
+    animation: crafted both ease-in-out ;
+    animation-range: entry 0% exit 100%;
+    animation-timeline: view();
+}
+@keyframes crafted {
+    0% {
+        transform:translateX(0vh);  
+        opacity: 0;
+        clip-path: inset(0% 10% 0% 0%);
+    }
+    80%{
+        transform: translateX(0vh);
+        clip-path: inset(0% 0% 0% 0%);
+        opacity: 1;
+    }
+    100%{ 
+        transform: translateX(0vh);  
+        opacity: 0;
+        clip-path: inset(0 10% 0% 0%);
+    }
+}
+section  .crafted-p{
+    animation: crafted-p both ease-in-out ;
+    animation-range: entry 0% exit 100%;
+    animation-timeline: view();
+}
+@keyframes crafted-p {
+    0% {
+        transform:translateX(0vh);  
+        opacity: 0;;
+    }
+    60%{
+        transform: translateX(0vh);
+        opacity: 1;
+    }
+    100%{ 
+        transform: translateX(0vh);  
+        opacity: 0;
+    }
+}
+#page2 .radical-card1{
+    animation: radical1 both linear ;
+    animation-range: entry 0% exit 100%;
+    animation-timeline: view();
+}
+@keyframes radical1 {
+    0% {  
+        opacity: 0;
+    }
+    40%{ 
+        box-shadow: #ffb8ea -8px 8px 8px 5px;
+        opacity: 1;
+    }
+    70%{ 
+        box-shadow: #ffb8ea -8px 8px 8px 5px;
+        opacity: 1;
+    }
+    100%{ 
+        opacity: 0;
+    }
+}
+#page2 .radical-card2{
+    animation: radical2 both ease-in-out ;
+    animation-range: entry 0% exit 100%;
+    animation-timeline: view();
+}
+@keyframes radical2 {
+    0% {  
+        opacity: 0;
+    }
+    40%{ 
+        box-shadow: #ffb8ea 8px 8px 8px 5px;
+        opacity: 1;
+    }
+    70%{ 
+        box-shadow: #ffb8ea 8px 8px 8px 5px;
+        opacity: 1;
+    }
+    100%{ 
+        opacity: 0;
+    }
+}
+#page2 .image2, #page4{
+    animation: image2 both ease-in-out ;
+    animation-range: entry 0% exit 100%;
+    animation-timeline: view();
+}
+@keyframes image2 {
+    0% {  
+        opacity: 0;
+    }
+    40%{ 
+        opacity: 1;
+    }
+    70%{ 
+        opacity: 1;
+    }
+    100%{ 
+        opacity: 0;
+    }
+}
+#page3 {
+    animation: frame3 both ease-in-out ;
+    animation-range: entry 0% exit 100%;
+    animation-timeline: view();
+}
+@keyframes frame3 {
+    0% {  
+        opacity: 0;
+    }
+    40%{ 
+        opacity: 1;
+    }
+    70%{ 
+        opacity: 1;
+    }
+    100%{ 
+        opacity: 0;
+    }
+}
+#page3 .collection-img li{
+    width: max-content; 
+    animation: image3 20s linear infinite;
+}
+@keyframes image3 {
+    from{
+        transform: translateX(0vh);
+    }
+    to{
+        transform: translateX(calc(-180px * 4 - 20px * 4));
+    }
+}
+.collection-img ul li:hover {
+  animation-play-state: paused;
+}
