@@ -4,6 +4,22 @@ An animated, fully responsive landing page for a skin care brand, built with HTM
 
 **🔗 Live demo:** https://laurence421.github.io/Skin-Care-Landing-Page-Animated/
 
+## 📸 Screenshots
+
+### Desktop
+
+![Desktop hero section with the HEMPZ lotion bottle](screenshots/desktop-hero.jpg)
+
+![Signature Collections product carousel](screenshots/desktop-collections.jpg)
+
+### Mobile
+
+<p align="center">
+  <img src="screenshots/mobile-hero.jpg" alt="Mobile hero section with hamburger menu button" width="280">
+  &nbsp;&nbsp;
+  <img src="screenshots/mobile-menu.jpg" alt="Mobile full-screen navigation menu" width="280">
+</p>
+
 ## ✨ Features
 
 *   **Pure CSS Animations**: Smooth, high-performance visual effects built entirely with CSS (`@keyframes`, transitions, transforms and scroll-driven `animation-timeline`) without relying on JavaScript libraries.
@@ -36,7 +52,8 @@ The scroll animations use `animation-timeline: view()`. Browsers that don't supp
 │   ├── Skin_care.css          # base (desktop) layout and mobile menu styles
 │   ├── skin_animation.css     # keyframes, scroll-driven animations, carousel
 │   └── skin_responsive.css    # breakpoints for laptop, tablet and phone
-└── images/                    # product photos, models and icons
+├── images/                    # product photos, models and icons
+└── screenshots/               # images used in this README
 ```
 
 ## 🚀 Run Locally
