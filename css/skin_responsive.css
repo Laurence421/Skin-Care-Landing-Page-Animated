@@ -1,0 +1,229 @@
+/* Desktop-first: the base layout lives in Skin_care.css, these rules scale it down. */
+body{
+    overflow-x: hidden;
+}
+nav .menu ul{
+    width: min(60vh, 55vw);
+}
+
+/* ==============================LAPTOP / TABLET============================== */
+@media (max-width: 1024px){
+    #page2{
+        height: auto;
+        min-height: 100vh;
+        grid-template-rows: auto auto;
+        row-gap: 6vh;
+        padding: 10vh 5vw 6vh 0;
+    }
+    #page2 #radical-card{
+        flex-shrink: 0;
+    }
+    #page2 .pic2{
+        justify-content: space-around;
+    }
+    #page2 .crafted-txt{
+        padding-left: 5vw;
+    }
+    #page2 p{
+        width: auto;
+        max-width: 95vh;
+    }
+    #page2 .radical-card1{
+        margin: 0 0 0 5vw;
+    }
+    #page3{
+        padding: 10vh 5vw;
+    }
+    .collection-img ul li{
+        width: 40vh;
+        height: 40vh;
+    }
+    .collection-img img{
+        width: 24vh;
+        height: 24vh;
+    }
+    #page4 img{
+        width: 100%;
+        height: auto;
+    }
+    #page4 h1{
+        font-size: 48px;
+    }
+}
+
+/* ============================TABLET (PORTRAIT)============================== */
+@media (max-width: 900px){
+    #page1 .image1{
+        flex-direction: column;
+        padding: 6vh 0 0;
+    }
+    section .image1 .skin-txt{
+        position: relative;
+        margin: 0;
+        padding: 0;
+        z-index: 1;
+        font-size: 14vw;
+        line-height: 1;
+        word-spacing: 0;
+        white-space: nowrap;
+    }
+    section .subtext{
+        position: relative;
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
+        margin: 2vh 0 0;
+        padding: 0 5vw;
+        text-align: center;
+        font-size: var(--medium-font-size);
+    }
+    section .image1 .exp-1{
+        margin-right: 0;
+    }
+    section .image1 img{
+        width: 85vw;
+        height: auto;
+        max-height: 75vh;
+        object-fit: contain;
+        margin-top: -4vh;
+    }
+    /* the hero sits higher on narrow screens, so drive its animations from page scroll */
+    section .image1 p,
+    section .image1 img,
+    section .image1 .subtext .exp-1,
+    section .image1 .subtext .exp-2{
+        animation-timeline: scroll();
+        animation-range: 0px 90vh;
+        animation-delay: 0s;
+    }
+
+    #page2{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 6vh;
+        padding: 8vh 6vw;
+    }
+    #page2 .crafted-txt{
+        padding-left: 0;
+    }
+    #page2 h1{
+        font-size: 9vw;
+    }
+    #page2 .pic2{
+        flex-direction: column;
+        gap: 6vh;
+    }
+    #page2 .radical-card1{
+        margin: 0;
+    }
+    #page2 .image2{
+        height: auto;
+        width: min(80vw, 420px);
+    }
+    #page2 .right-side{
+        display: flex;
+        justify-content: center;
+    }
+    #page2 .radical-card2{
+        margin: 0;
+    }
+
+    #page3{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 6vh;
+        padding: 8vh 0;
+    }
+    #page3 h1{
+        font-size: 9vw;
+        text-align: center;
+    }
+    #page3 .collection-img{
+        justify-content: flex-start;
+    }
+    .collection-img ul{
+        justify-content: flex-start;
+        gap: 30px;
+        padding-left: 6vw;
+    }
+    .collection-img ul li{
+        width: 260px;
+        height: 280px;
+    }
+    .collection-img img{
+        width: 160px;
+        height: 160px;
+        object-fit: contain;
+    }
+    .collection-img h4, .collection-img h5{
+        margin-left: 20px;
+    }
+    .collection-img h6{
+        margin-right: 20px;
+    }
+
+    #page4{
+        height: auto;
+        padding: 8vh 6vw;
+    }
+    #page4 .page4{
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        gap: 5vh;
+        text-align: center;
+    }
+    #page4 .signature-h1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #page4 img{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: min(100%, 480px);
+        margin: 0 auto;
+    }
+    #page4 h1{
+        font-size: 9vw;
+    }
+}
+
+/* =================================MOBILE==================================== */
+@media (max-width: 768px){
+    #page1 nav{
+        margin: 0 6vw;
+    }
+    nav .menu, nav .user{
+        display: none;
+    }
+    .nav-toggle{
+        display: flex;
+    }
+}
+
+@media (max-width: 480px){
+    section .image1 .skin-txt{
+        font-size: 15vw;
+    }
+    section .subtext{
+        font-size: var(--small-font-size);
+    }
+    #page2 h1, #page3 h1{
+        font-size: 11vw;
+    }
+    #page4 h1{
+        font-size: 9vw;
+    }
+    #page2 #radical-card{
+        width: min(294px, 88vw);
+    }
+    .collection-img ul li{
+        width: 220px;
+        height: 250px;
+    }
+    .collection-img img{
+        width: 130px;
+        height: 130px;
+    }
+}

@@ -231,3 +231,9 @@ section  .crafted-p{
 .collection-img ul li:hover {
   animation-play-state: paused;
 }
+@media (prefers-reduced-motion: reduce){
+    *{
+        animation: none !important;
+        transition: none !important;
+    }
+}
