@@ -216,20 +216,36 @@ section  .crafted-p{
         opacity: 0;
     }
 }
-#page3 .collection-img li{
-    width: max-content; 
-    animation: image3 20s linear infinite;
+/* the card list holds two identical sets, so sliding the track by half loops seamlessly */
+#page3 .collection-img ul{
+    width: max-content;
+    animation: image3 var(--marquee-duration, 60s) linear infinite;
 }
 @keyframes image3 {
     from{
-        transform: translateX(0vh);
+        transform: translateX(0);
     }
     to{
-        transform: translateX(calc(-180px * 4 - 20px * 4));
+        transform: translateX(-50%);
     }
 }
-.collection-img ul li:hover {
+#page3 .collection-img ul:hover {
   animation-play-state: paused;
+}
+/* browsers without scroll-driven animations would freeze these on their last (invisible) frame */
+@supports not (animation-timeline: view()){
+    section .image1 p,
+    section .image1 img,
+    section .image1 .subtext .exp-1,
+    section .image1 .subtext .exp-2,
+    section .crafted-h1,
+    section .crafted-p,
+    #page2 .radical-card1,
+    #page2 .radical-card2,
+    #page2 .image2, #page4,
+    #page3 {
+        animation: none;
+    }
 }
 @media (prefers-reduced-motion: reduce){
     *{

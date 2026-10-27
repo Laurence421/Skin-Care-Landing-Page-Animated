@@ -182,7 +182,7 @@ section .image1 img{
     height: 65vh;
 
 }
-#page2 #radical-card{
+#page2 .radical-card{
     width: 294px;
     height: 310px;
     background-color: #f0f0f0;
@@ -197,7 +197,7 @@ section .image1 img{
     margin-left: 25vh;
     margin-bottom: 15vh;
 }
-#page2 #radical-card p{
+#page2 .radical-card p{
     width: auto;
     color: var(--second-color-black);
     font-size: var(--small-font-size);
@@ -291,12 +291,13 @@ section .image1 img{
     position: relative;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     gap: 50px;
+    padding-right: 50px;
 }
 #page3 .collection-img{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     grid-column: 1/2;
     grid-template-rows: 2/3;
